@@ -1,4 +1,6 @@
-[2000] %Fatal: alu_tb.sv:40: Assertion failed in alu_tb.check: ALU op=0 A=ffffffff B=00000001: resultado=00000000 flags=0010; esperado=00000000 1010
-%Error: alu_tb.sv:40: Verilog $stop
-Aborting...
-Aborted (core dumped)
+PASS componentes: 197 pares de 32 bits
+PASS ej1: 412 casos de ALU
+- alu_tb.sv:79: Verilog $finish
+- S i m u l a t i o n   R e p o r t: Verilator 5.032 2025-01-01
+- Verilator: $finish at 609ns; walltime 0.001 s; speed 451.206 us/s
+- Verilator: cpu 0.001 s on 1 threads; alloced 89 MB

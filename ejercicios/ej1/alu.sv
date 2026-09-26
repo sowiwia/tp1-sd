@@ -38,8 +38,8 @@ module alu #(
   comparador #(
       .DATA_WIDTH(DATA_WIDTH)
   ) u_zero (
-      .a(operand_a),
-      .b(operand_b),
+      .a(alu_io.result),
+      .b(4'b0000),
       .iguales(es_cero)
   );
   negativo #(

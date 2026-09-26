@@ -36,6 +36,10 @@
                        alu_tb.sv:2:8: ... Location of module with timescale
     2 | module alu_tb;
       |        ^~~~~~
+%Warning-WIDTHEXPAND: alu.sv:42:8: Input port connection 'b' expects 32 bits on the pin connection, but pin connection's CONST '4'h0' generates 4 bits.
+                                 : ... note: In instance 'alu_tb.dut'
+   42 |       .b(4'b0000),
+      |        ^
 %Warning-WIDTHEXPAND: alu_tb.sv:19:11: Operator ASSIGN expects 64 bits on the Assign RHS, but Assign RHS's SIGNED generates 32 bits.
                                      : ... note: In instance 'alu_tb'
    19 |         sa=$signed(a); sb=$signed(b); ua={32'b0,a}; ub={32'b0,b};
@@ -44,7 +48,7 @@
                                      : ... note: In instance 'alu_tb'
    19 |         sa=$signed(a); sb=$signed(b); ua={32'b0,a}; ub={32'b0,b};
       |                          ^
-make[1]: Entering directory '/tmp/tp1-sim.XqAXmR/obj_dir'
+make[1]: Entering directory '/tmp/tp1-sim.xr0eBi/obj_dir'
 g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
 g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
 g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
@@ -71,7 +75,7 @@ g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vl
 g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Valu_tb__pch.h.slow -c -o Valu_tb__TraceDecls__0__Slow.o Valu_tb__TraceDecls__0__Slow.cpp
 g++    verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o Valu_tb__ALL.a    -pthread -lpthread -latomic   -o Valu_tb
 rm Valu_tb__ALL.verilator_deplist.tmp
-make[1]: Leaving directory '/tmp/tp1-sim.XqAXmR/obj_dir'
+make[1]: Leaving directory '/tmp/tp1-sim.xr0eBi/obj_dir'
 - V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
-- Verilator: Built from 0.075 MB sources in 10 modules, into 0.909 MB in 17 C++ files needing 0.000 MB
-- Verilator: Walltime 11.537 s (elab=0.020, cvt=0.154, bld=11.324); cpu 0.188 s on 2 threads; alloced 19.719 MB
+- Verilator: Built from 0.075 MB sources in 10 modules, into 0.889 MB in 17 C++ files needing 0.000 MB
+- Verilator: Walltime 11.642 s (elab=0.001, cvt=0.093, bld=11.526); cpu 0.137 s on 2 threads; alloced 19.836 MB
