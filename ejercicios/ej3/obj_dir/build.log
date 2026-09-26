@@ -59,7 +59,7 @@
                                     : ... Suggest using delayed assignment '<='
     4 |     always #5 clk = ~clk;
       |                   ^
-make[1]: Entering directory '/tmp/tp1-sim.4F4Cva/obj_dir'
+make[1]: Entering directory '/tmp/tp1-sim.kugFYX/obj_dir'
 g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated.o /usr/share/verilator/include/verilated.cpp
 g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_vcd_c.o /usr/share/verilator/include/verilated_vcd_c.cpp
 g++ -Os  -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -c -o verilated_timing.o /usr/share/verilator/include/verilated_timing.cpp
@@ -82,7 +82,7 @@ g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vl
 g++   -I.  -MMD -I/usr/share/verilator/include -I/usr/share/verilator/include/vltstd -DVM_COVERAGE=0 -DVM_SC=0 -DVM_TIMING=1 -DVM_TRACE=1 -DVM_TRACE_FST=0 -DVM_TRACE_VCD=1 -faligned-new -fcf-protection=none -Wno-bool-operation -Wno-shadow -Wno-sign-compare -Wno-tautological-compare -Wno-uninitialized -Wno-unused-but-set-parameter -Wno-unused-but-set-variable -Wno-unused-parameter -Wno-unused-variable    -DVL_TIME_CONTEXT   -fcoroutines -include Vdatapath_tb__pch.h.slow -c -o Vdatapath_tb__TraceDecls__0__Slow.o Vdatapath_tb__TraceDecls__0__Slow.cpp
 g++    verilated.o verilated_vcd_c.o verilated_timing.o verilated_threads.o Vdatapath_tb__ALL.a    -pthread -lpthread -latomic   -o Vdatapath_tb
 rm Vdatapath_tb__ALL.verilator_deplist.tmp
-make[1]: Leaving directory '/tmp/tp1-sim.4F4Cva/obj_dir'
+make[1]: Leaving directory '/tmp/tp1-sim.kugFYX/obj_dir'
 - V e r i l a t i o n   R e p o r t: Verilator 5.032 2025-01-01 rev (Debian 5.032-1)
 - Verilator: Built from 0.107 MB sources in 12 modules, into 0.133 MB in 13 C++ files needing 0.000 MB
-- Verilator: Walltime 9.790 s (elab=0.001, cvt=0.008, bld=9.774); cpu 0.021 s on 2 threads; alloced 13.293 MB
+- Verilator: Walltime 12.377 s (elab=0.003, cvt=0.008, bld=12.353); cpu 0.024 s on 2 threads; alloced 13.176 MB
